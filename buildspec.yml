@@ -8,7 +8,7 @@ phases:
      - echo "pre_build step"
  build:
    commands:
-     - aws s3 sync --delete . "s3://kha-awscodepipeline-demobucket-example-date"
+     - aws s3 sync --delete . "s3://khatest1"
  post_build:
    commands:
      - echo "post_build step"
